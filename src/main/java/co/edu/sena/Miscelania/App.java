@@ -1,5 +1,6 @@
 package co.edu.sena.Miscelania;
 
+import java.security.Principal;
 import java.util.Scanner;
 
 public class App {
@@ -110,10 +111,125 @@ public class App {
     }
 
     static void Condicionales() {
-        // Código de Condicionales()...
+        double num1;
+        double num2;
+        double num3;
+        double result;
+        // primero punto Escribir un algoritmo para saber si el número ingresado por teclado es positivo o negativo
+        System.err.println("Saber si un numeroe es positivo o negativo");
+        System.err.println("Digite un número:");
+        num1 = data.nextDouble();
+        if (num1 < 0) {
+            System.err.println("El número es negativo" + "\n");
+        }
+        else {
+            System.err.println("El número es positivo" + "\n");
+        }
+
+        // Segundo punto. Escribir un algoritmo que reciba dos números por teclado y diga cuál es el mayor y cuál el menor.
+        System.err.println("Ingresar dos numeros y saber cual es el mayor y menor");
+        System.err.println("Digite el primer número:");
+        num1 = data.nextDouble();
+        System.err.println("Digite el segundo número:");
+        num2 = data.nextDouble();        
+
+        if (num1 > num2) {
+            System.err.println("El número " + num1 + " es mayor que el número " + num2 + "\n");
+        }
+        else {
+            System.err.println("El número " + num2 + " es mayor que el número " + num1 + "\n");
+        }
+
+        //Tercer punto. Escriba un programa que lea tres números enteros positivos y que calcule e imprima en pantalla el menor y el mayor de ellos.
+       
+       System.err.println("Ingresar tres numeros y sabes cual es el menor y mayor de los tres");
+        System.err.println("Digite el primer número:");
+        num1 = data.nextDouble();
+        System.err.println("Digite el segundo número:");
+        num2 = data.nextDouble();
+        System.err.println("Digite el tercer número:");
+        num3 = data.nextDouble(); 
+
+        if (num1 < num2 && num2 < num3) {
+            System.err.println("El numero menor es el " + num1 + " y el mayor " + num3 + "\n");
+        }
+        else if (num1 > num2 && num2 > num3) {
+            System.err.println("El numero menor es el " + num3 + " y el mayor " + num1 + "\n");
+        }
+        else if (num1 < num2 && num2 > num3) {
+            if (num1 > num3) {
+                System.err.println("El numero menor es el " + num3 + " y el mayor " + num2 + "\n");
+            }
+            else {
+                System.err.println("El numero menor es el " + num1 + " y el mayor " + num2 + "\n");
+            }
+        }
+    
+        // Cuarto punto. Dados dos números A y B, sumarlos si A es menor que B o sino restarlos
+        System.err.println("Sumar o restar");
+        System.err.println("Digite el primer número:");
+        num1 = data.nextDouble();
+        System.err.println("Digite el segundo número:");
+        num2 = data.nextDouble();
+        if (num1 < num2) {
+            result = num1 + num2 ;
+            System.err.println("El resultado de la suma es: " + result + "\n");
+        }
+        else {
+            result = num1 - num2;
+            System.err.println("El resultado de la resta es: " + result + "\n");
+        }
+        //Quinto punto. Dados dos números A y B encontrar el cociente entre A y B. Recordar que la división por cero no está definida, en ese caso debe aparecer una leyenda anunciando que la división no es posible.
+        System.err.println("Cociente de dos numeros");
+        System.err.println("Digite el primer número:");
+        num1 = data.nextDouble();
+        System.err.println("Digite el segundo número:");
+        num2 = data.nextDouble();
+
+        result = num1 / num2;
+
+        if (num2 == 0) {
+            System.err.println("La division no es posible");
+        }
+        else {
+            System.err.println("El resultado de la divison es: " + result + "\n" );
+        }
+        // sexto punto Dados dos números A y B, sumarlos si al menos uno de ellos es negativo, en caso contrario multiplicarlos
+        System.err.println("suma o multiplicacion");
+        System.err.println("Digite el primer número:");
+        num1 = data.nextDouble();
+        System.err.println("Digite el segundo número:");
+        num2 = data.nextDouble();
+
+        if (num1 < 0 || num2 < 0) {
+            result = num1 + num2;
+            System.err.println("El resultado de la suma es: " + result + "\n");
+        }
+        else {
+            result = num1 * num2;
+            System.err.println("El resultado de la multiplicación es: " + result + "\n");
+        }
+
+        //septimo punto Escribir un algoritmo que determine si un año es bisiesto o no
+
+        System.err.println("Año bisiesto");
+        System.err.println("Digite el año actual: ");
+        num1 = data.nextDouble();
+
+        if (num1 %4 == 0) {
+            System.err.println("El año es bisiesto");
+        }
+        else {
+            System.err.println("El año no es bisiesto");
+        }
     }
 
+    
+
     static void Ciclos() {
-        // Código de Ciclos()...
-    }
+        double num1;
+        double num2;
+        //primer punto. Imprimir todos los múltiplos de 3 que hay entre 1 y 100.
+
+}
 }
