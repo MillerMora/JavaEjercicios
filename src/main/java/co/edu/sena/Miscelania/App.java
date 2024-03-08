@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class App {
 
     static Scanner data = new Scanner(System.in);
-    static int option;
+    static int option, subOption;
     static double Num1, Num2 , Num3, Num4;
     static double result;
 
@@ -52,8 +52,8 @@ public class App {
             System.err.println("8. Calcular el promedio de tres números");
             System.err.println("99. Salir");
             System.err.println("Por Favor digite una opción");
-            option = data.nextInt();
-            switch (option) {
+            subOption = data.nextInt();
+            switch (subOption) {
                 case 1:
                     calculateTriangleArea();
                     break;
@@ -86,7 +86,7 @@ public class App {
                     break;
 
             }
-        } while (option != 99);
+        } while (subOption != 99);
     }
     static void calculateTriangleArea() {
 
@@ -182,8 +182,8 @@ public class App {
             System.err.println("7. Determinar si un año es bisiesto");
             System.err.println("99. Salir al menú principal");
             System.err.println("Por Favor digite una opción");
-            option = data.nextInt();
-            switch (option) {
+            subOption = data.nextInt();
+            switch (subOption) {
                 case 1:
                     positiveOrNegative();
                     break;
@@ -212,7 +212,7 @@ public class App {
                     System.err.println("Opción inválida. Por favor, intente nuevamente.");
                     break;
             }
-        } while (option != 99);
+        } while (subOption != 99);
     }
 
     static void positiveOrNegative() {
